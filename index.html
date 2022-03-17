@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>马赛克天堂</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="/assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/lib.js"></script>
+</head>
+
+<body>
+    <div id="top">
+        <div id="title" class="flex-col">
+            <p>马赛克天堂</p>
+        </div>
+        <div class="flex-col">
+            <div id="top-right-tools">
+                <img src="/assets/icon/download.svg" alt="download" height="18px" id="download">
+                <input type="file" id="loader">
+                <img src="/assets/icon/choose file.svg" alt="choose file" height="18px" id="choose-file-icon">
+            </div>
+        </div>
+    </div>
+    <div id="process">
+        <div id="process-bar"></div>
+    </div>
+    <div id="display"></div>
+    <div id="attrs">
+        <div class="attr">
+            <div class="name">文件名:</div>
+            <div class="input" id="filename"></div>
+        </div>
+        <div class="attr">
+            <div class="name">实时显示:</div>
+            <div class="input">
+                <input type="checkbox" id="realtime">
+            </div>
+        </div>
+        <div class="attr">
+            <div class="name">像素密度</div>
+            <div class="input">
+                <input type="range" id="density" max=200 min=1 value="30">
+            </div>
+        </div>
+        <div class="attr">
+            <div class="name">未完成</div>
+            <div class="input">
+                <input type="range" id="sharpen" max="100" min="1">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/assets/main.js"></script>
+</html>

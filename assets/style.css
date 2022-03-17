@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#top {
+  user-select: none;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  height: 44px;
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 3px #999;
+}
+#top div {
+  color: #e6e6e6;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#title {
+  text-align: center;
+  font-size: 17px;
+}
+#title p {
+  padding: 8px;
+}
+#choose-file-icon {
+  margin-right: 5px;
+}
+#loader {
+  display: none;
+}
+#display {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #333;
+}
+#display canvas {
+  margin: 0 auto;
+}
+#top-right-tools {
+  display: flex;
+  flex-direction: row;
+}
+#top-right-tools img {
+  margin: 8px;
+}
+#attrs {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #333;
+}
+#process {
+  height: 3px;
+}
+#process #process-bar {
+  height: 100%;
+  background: linear-gradient(to right, #6100ff, #0068ff, #008cff, #00a2ff, #00b1e2, #00be95);
+}
+.attr {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.attr .name {
+  flex: 2;
+  text-align: center;
+}
+.attr .input {
+  flex: 8;
+  width: 100%;
+}
+.attr .input input[type=range] {
+  width: 90%;
+}
