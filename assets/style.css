@@ -74,7 +74,7 @@ body {
   width: 100%;
 }
 .attr .name {
-  flex: 2;
+  flex: 2.5;
   text-align: center;
 }
 .attr .input {
